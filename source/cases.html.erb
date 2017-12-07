@@ -1,0 +1,67 @@
+<%= partial 'nav_menu_cases' %>
+<div class="main-content">
+	<div class="top-bar sm-padding is-on-top">
+		<div class="logo pointer" onclick="window.location='/'"></div>
+		<div class="page-title">Cases</div>
+		<div class="lang">
+			<a href="javascript:void(0)" class="nav-icon left-space"><i class="icon icon-menu large"></i></a>
+			<button type="button" data-toggle="modal" data-target="#cases-filter-dialog">Filtrar</button>
+			<button type="button" data-toggle="modal" data-target="#cases-search-dialog">Buscar</button>
+			<button class="mobile" type="button" data-toggle="modal" data-target="#cases-search-dialog"><i class="fa fa-search" aria-hidden="true"></i></button>
+		</div>
+	</div>
+	<section class="section initial">
+		<div class="main-case">
+			<div>
+				<h1>Lorem ipsum dolor sit amet</h1>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+			</div>
+		</div>
+	</section>
+	<section class="section cases sm-padding">
+		<div class="case">
+			<div class="image" style="background-image: url(images/cases/case1.jpg);"></div>
+			<div class="case-content">
+				<h2>Lorem ipsum dolor sit</h2>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+				<a href="javascript:void(0)">Leia mais</a>
+			</div>
+		</div>
+		<div class="case">
+			<div class="image" style="background-image: url(images/cases/case2.jpg);"></div>
+			<div class="case-content">
+				<h2>Lorem ipsum dolor sit</h2>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+				<a href="javascript:void(0)">Leia mais</a>
+			</div>
+		</div>
+		<div class="case">
+			<div class="image" style="background-image: url(images/cases/case3.jpg);"></div>
+			<div class="case-content">
+				<h2>Lorem ipsum dolor sit</h2>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+				<a href="javascript:void(0)">Leia mais</a>
+			</div>
+		</div>
+		<div class="case">
+			<div class="image" style="background-image: url(images/cases/case4.jpg);"></div>
+			<div class="case-content">
+				<h2>Lorem ipsum dolor sit</h2>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+				<a href="javascript:void(0)">Leia mais</a>
+			</div>
+		</div>
+		<div class="case">
+			<div class="image" style="background-image: url(images/cases/case5.jpg);"></div>
+			<div class="case-content">
+				<h2>Lorem ipsum dolor sit</h2>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+				<a href="javascript:void(0)">Leia mais</a>
+			</div>
+		</div>
+	</section>
+	<%= partial '_dialog_cases_filter' %>
+	<%= partial '_dialog_cases_search' %>
+	<%= partial 'footer' %>
+</div>

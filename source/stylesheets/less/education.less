@@ -1,0 +1,72 @@
+.main-content {
+	.main-content-base;
+	.top-bar {
+		.top-bar-base;
+	}
+	.section {
+		.section-base;
+		height: 992px;
+		&.initial {
+			background-image: url('../images/education/bg-section1.png');
+			background-size: 100% 992px;
+			color: @white;
+			z-index: 2;
+			.title {
+				position: absolute;
+				top: 56%;
+				left: 50%;
+				.translate(-50%,-50%);
+				text-align: left;
+				width: 85%;
+				h1 {
+					font-size: 60px;
+					line-height: 1.161;
+					font-weight: 700;
+				}
+				p {
+					margin-top: 30px;
+					font-size: 22px;
+					line-height: 1.2;
+					max-width: 55%;
+					font-family: "Flexo-Light";
+				}
+				button {
+					margin-top: 5%;
+					text-decoration: none;
+					color: @white;
+					border: 1px solid @white;
+					background-color: transparent;
+					padding: 10px 15px;
+					font-size: @font-size-smedium;
+					font-family: 'Flexo';
+					.transition(0.3s ease);
+					&:hover {
+						background-color: @white;
+						color: @gray-dark;
+					}
+				}
+			}
+			.screen-phone({
+				background-size: cover;
+				background-position: center center;
+				.title {
+					h1 {
+						font-size: 36px;
+					}
+					p {
+						font-size: 16px;
+						max-width: 100%;
+					}
+					button {
+						padding: 10px;
+						font-size: 14px;
+					}
+				}
+			});
+		}
+	}
+	footer {
+		position: relative;
+    z-index: 2;
+	}
+}

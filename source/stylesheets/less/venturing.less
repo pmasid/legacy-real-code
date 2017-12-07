@@ -1,0 +1,132 @@
+.main-content {
+	.main-content-base;
+	.top-bar {
+		.top-bar-base;
+	}
+	.section {
+		.section-base;
+		height: 100vh;
+		&.initial {
+			background-image: url('../images/venturing/bg-section1.png');
+			color: @white;
+			z-index: 2;
+			.title {
+				position: absolute;
+				top: 56%;
+				left: 50%;
+				.translate(-50%,-50%);
+				text-align: left;
+				width: 85%;
+				h1 {
+					font-size: 58px;
+					line-height: 1.161;
+					font-weight: 700;
+				}
+				p {
+					margin-top: 30px;
+					font-size: 26px;
+					line-height: 1.2;
+					max-width: 55%;
+					color: rgba(red(@white), green(@white), blue(@white), 0.8);
+				}
+			}
+			.screen-phone({
+				background-size: cover;
+				background-position: center center;
+				.title {
+					h1 {
+						font-size: 36px;
+						br {
+							display: none;
+						}
+					}
+					p {
+						font-size: 16px;
+						max-width: 100%;
+					}
+					button {
+						padding: 10px;
+						font-size: 14px;
+					}
+				}
+			});
+		}
+		&.venturing {
+			height: auto;
+			padding-top: 100px;
+			padding-bottom: 100px;
+			.company {
+				margin-top: 60px;
+				&:first-child {
+					margin-top: 0;
+				}
+				> div {
+					display: inline-block;
+					float: left;
+					width: 50%;
+					&.image {
+						width: calc(~"50% - 2px");
+						max-width: 372px;
+						margin-right: calc(~"50% - 374px");
+						border: 1px solid @client-border-color;
+						text-align: center;
+				    min-height: 190px;
+    				line-height: 190px;
+						img {
+							max-width: 90%;
+						}
+					}
+					&.info {
+						h3 {
+							color: @section-title-color;
+						  font-weight: 700;
+						  line-height: 1;
+					    font-size: 32px;
+					    margin: 15px 0;
+						}
+						p {
+							color: rgba(red(@black), green(@black), blue(@black), 0.8);
+							line-height: 1.75;
+							max-width: 350px;
+    					font-size: 17px;
+						}
+						a {
+							color: @black;
+							font-weight: 700;
+							line-height: 1.2;
+							margin-top: 5px;
+							cursor: pointer;
+							text-decoration: underline;
+							display: inline-block;
+						}
+					}
+				}
+				&:after {
+					.pseudo-clear;
+				}
+			}
+			.screen-phone({
+				padding-top: 50px;
+				.company {
+					margin-top: 40px;
+					> div {
+						width: 100%;
+						&.image {
+							width: calc(~"100% - 2px");
+							max-width: 100%;
+							margin-right: 0;
+						}
+						&.info {
+							h3 {
+								font-size: 22px;
+							}
+							p {
+								font-size: 14px;
+							}
+						}
+					}
+				}
+			});
+		}
+	}
+}

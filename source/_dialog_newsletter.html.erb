@@ -1,0 +1,113 @@
+<div id="newsletter-dialog" class="modal fade in" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><i class="icon icon-close"></i></button>
+        <h4 class="modal-title">Crie um perfil</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+          <h2>Passo 1: Informações pessoais</h2>
+          <div class="form__input form__input--empty">
+            <label class="form__label">
+              <span class="form__label__content">
+                Email
+                <span class="accessible-only-text">
+                  <span>Obrigatório</span>
+                </span>
+              </span>
+              <div class="input-wrap">
+                <input placeholder="Email" onfocus="this.value.length > 0 ? this.placeholder = '' : this.placeholder = 'Email'" onblur="this.placeholder = 'Email'" autocomplete="on" class="input-text" name="email" type="email">
+                <span class="input-message-validate">Email inválido</span>
+              </div>
+            </label>
+          </div>
+          <div class="form__input form__input--empty">
+            <label class="form__label">
+              <span class="form__label__content">
+                Nome
+                <span class="accessible-only-text">
+                  <span>Obrigatório</span>
+                </span>
+              </span>
+              <div class="input-wrap">
+                <input placeholder="Nome" onfocus="this.value.length > 0 ? this.placeholder = '' : this.placeholder = 'Nome'" onblur="this.placeholder = 'Nome'" autocomplete="on" class="input-text" name="nome" type="text">
+              </div>
+            </label>
+          </div>
+          <div class="form__input form__input--empty">
+            <label class="form__label">
+              <span class="form__label__content">
+                Senha
+                <span class="accessible-only-text">
+                  <span>Obrigatório</span>
+                </span>
+              </span>
+              <div class="input-wrap">
+                <input placeholder="Senha" onfocus="this.value.length > 0 ? this.placeholder = '' : this.placeholder = 'Senha'" onblur="this.placeholder = 'Senha'" autocomplete="on" class="input-text" name="senha" type="password">
+              </div>
+            </label>
+          </div>
+          <div class="form__input form__input--empty">
+            <label class="form__label">
+              <span class="form__label__content">
+                Confirmar senha
+                <span class="accessible-only-text">
+                  <span>Obrigatório</span>
+                </span>
+              </span>
+              <div class="input-wrap">
+                <input placeholder="Confirmar senha" onfocus="this.value.length > 0 ? this.placeholder = '' : this.placeholder = 'Confirmar senha'" onblur="this.placeholder = 'Confirmar senha'" autocomplete="on" class="input-text" name="confirma_senha" type="password">
+              </div>
+            </label>
+          </div>
+          <h2 class="space-top">Passo 2: Selecione áreas de interesse e nós iremos te notificar sempre quando houver alguma novidade :)</h2>
+          <div class="row">
+            <div class="col-xs-12">
+              <span class="form-ctrl"><span class="checkbox" data-name="all" data-value="0"></span>Todos</span>
+            </div>
+            <div class="col-xs-12">
+              <h3>Indústrias</h3>
+            </div>
+            <div class="col-xs-5">
+              <span class="form-ctrl"><span class="checkbox" data-name="industries" data-value="1"></span><span class="text">Financial Services e Insurance</span></span>
+              <span class="form-ctrl"><span class="checkbox" data-name="industries" data-value="2"></span>Energia</span>
+              <span class="form-ctrl"><span class="checkbox" data-name="industries" data-value="3"></span>Varejo</span>
+              <span class="form-ctrl"><span class="checkbox" data-name="industries" data-value="4"></span>Alimentos</span>
+              <span class="form-ctrl"><span class="checkbox" data-name="industries" data-value="5"></span>Agronegócio</span>
+            </div>
+            <div class="col-xs-5">
+              <span class="form-ctrl"><span class="checkbox" data-name="industries" data-value="6"></span>Mineração</span>
+              <span class="form-ctrl"><span class="checkbox" data-name="industries" data-value="7"></span>Indústria e Infraestrutura</span>
+              <span class="form-ctrl"><span class="checkbox" data-name="industries" data-value="8"></span>Farmacêutica</span>
+              <span class="form-ctrl"><span class="checkbox" data-name="industries" data-value="9"></span>Saúde</span>
+              <span class="form-ctrl"><span class="checkbox" data-name="industries" data-value="10"></span>Telecomunicações</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+              <h3>Serviços</h3>
+            </div>
+            <div class="col-xs-5">
+              <span class="form-ctrl"><span class="checkbox" data-name="services" data-value="0"></span>Processos e Operações</span>
+              <span class="form-ctrl"><span class="checkbox" data-name="services" data-value="1"></span>Produtividade e Custos</span>
+              <span class="form-ctrl"><span class="checkbox" data-name="services" data-value="2"></span>Estratégia</span>
+              <span class="form-ctrl"><span class="checkbox" data-name="services" data-value="3"></span>Organizações</span>
+              <span class="form-ctrl"><span class="checkbox" data-name="services" data-value="4"></span>Pessoas</span>
+            </div>
+            <div class="col-xs-5">
+              <span class="form-ctrl"><span class="checkbox" data-name="services" data-value="5"></span>Inovação</span>
+              <span class="form-ctrl"><span class="checkbox" data-name="services" data-value="6"></span>Digital</span>
+              <span class="form-ctrl"><span class="checkbox" data-name="services" data-value="7"></span>Analytics</span>
+              <span class="form-ctrl"><span class="checkbox" data-name="services" data-value="8"></span>Tecnologia</span>
+              <span class="form-ctrl"><span class="checkbox" data-name="services" data-value="9"></span><span class="text">Novos negócios, Startups e Incubação</span></span>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="action" data-dismiss="modal">Pronto!</button>
+      </div>
+    </div>
+  </div>
+</div>

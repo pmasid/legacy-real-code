@@ -1,0 +1,129 @@
+.picture {
+	margin-bottom: 50px;
+	.screen-lg-min({
+		max-width: 1300px;
+  	margin: 0 auto;
+  	margin-bottom: 50px;
+	});
+	.info {
+		float: left;
+		text-align: left;
+		p {
+			font-size: @font-size-base;
+			color: @black;
+			max-width: 250px;
+			line-height: 1.8;
+			&.author {
+				font-size: @font-size-small;
+				font-weight: 700;
+			}
+		}
+	}
+	.share {
+		float: right;
+  	> a {
+  		color: @black;
+  		opacity: 0.2;
+  		font-size: 15px;
+  		display: inline-block;
+  		float: left;
+  		margin: 0 15px;
+  		text-decoration: none;
+  		&:last-child {
+  			margin-right: 0;
+  		}
+  	}
+  	&:after {
+			.pseudo-clear;
+		}
+	}
+	&:not(.abs) {
+		.img-box {
+			display: inline-block;
+			> img {
+				display: block;
+				width: auto;
+				height: auto;
+				margin-bottom: 30px;
+				.screen-phone({
+		    	max-width: 100%;
+	    	});
+			}
+			&.left-space {
+				.info {
+					padding-left: 100px;
+				}
+			}
+			&.full-width {
+				width: 100%;
+				> img {
+					width: 100%;
+				}
+				.info {
+					padding-left: @base-section-padding;
+				}
+				.share {
+					padding-right: @sm-section-padding;
+				}
+			}
+		}
+		&.centered {
+			text-align: center;
+		}
+		&.right-align {
+			text-align: right;
+		}
+		&:after {
+			.pseudo-clear;
+		}
+	}
+	&.abs {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		.info,
+		.share {
+			position: absolute;
+			top: 30px;
+		}
+		.info {
+			left: @base-section-padding;
+		}
+		.share {
+			right: 5%;
+		}
+	}
+}
+
+.main-content {
+	.main-content-base;
+	.top-bar {
+		.top-bar-base;
+	}
+	.section {
+		.section-base;
+		&.main-image {
+			position: relative;
+			background-color: @white;
+			background-size: cover;
+	    background-position: center center;
+	    height: 100vh;
+	    margin-bottom: 200px;
+	    .picture {
+	    	margin-bottom: 0;
+	    }
+	    .screen-phone({
+	    	margin-top: 44px;
+	    	background-size: 100%;
+		    height: 300px;
+    	});
+    }
+    &.gallery-images {
+    	height: auto;
+	    margin-bottom: 400px;
+	    .screen-phone({
+	    	margin-bottom: 200px;
+    	});
+    }
+  }
+}

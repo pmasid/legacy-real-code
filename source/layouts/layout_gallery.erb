@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "EloGroup" %></title>
+
+    <%= stylesheet_link_tag "bootstrap-3.3.6.min" %>
+    <%= stylesheet_link_tag "bootstrap-material-design.min" %>
+    <%= stylesheet_link_tag "ripples.min" %>
+    <%= stylesheet_link_tag "style-gallery" %>
+    <%= stylesheet_link_tag "animate.min" %>
+    <%= stylesheet_link_tag "lightslider.min" %>
+  </head>
+
+  <body class="<%= page_classes %>">
+    <%= yield %>
+    <%= javascript_include_tag  "jquery-2.2.2.min" %>
+    <%= javascript_include_tag  "bootstrap-3.3.6.min" %>
+    <%= javascript_include_tag  "material.min" %>
+    <%= javascript_include_tag  "ripples.min" %>
+    <%= javascript_include_tag  "lightslider-1.1.5.min" %>
+    <%= javascript_include_tag  "jquery.sticky" %>
+    <%= javascript_include_tag  "script" %>
+  </body>
+</html>

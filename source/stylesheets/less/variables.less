@@ -1,0 +1,154 @@
+// Global values
+// --------------------------------------------------
+
+
+// Grays
+// -------------------------
+@black:                  #000;
+@gray-darker:            lighten(#000, 13.5%); // #222
+@gray-dark:              lighten(#000, 20%);   // #333
+@gray:                   lighten(#000, 33.5%); // #555
+@gray-light:             lighten(#000, 60%);   // #999
+@gray-lighter:           lighten(#000, 93.5%); // #eee
+@white:                  #fff;
+
+// Custom colors
+// -------------------------
+@dark-blue:							#063b4a;
+@darker-blue:						#052f3b;
+@orange:								#da5e11;
+@facebook-color: 				#3b5998;
+@twitter-color:  				#4099FF;
+@youtube-color:					#e52d27;
+@linkedin-color: 				#0077b5;
+@gray-default:					#cccccc;
+
+// Brand colors
+// -------------------------
+
+// Scaffolding
+// -------------------------
+@body-bg:         			 				 @dark-blue;
+@text-color:             				 @gray-dark;
+@section-title-color: 					 #525052;
+@third-section-bg-color:				 #ececec;
+@fourth-section-bg-color:				 #f8f3e5;
+@nav-text-color: 								 #c6c2b9;
+@footer-gray:										 #b7b7b7;
+@timeline-yellow:								 #fcb14d;
+
+@case-bg-color:									 #f5f5f5;
+@client-border-color: 					 #e3e3e3;
+
+@error-color: 									 #F44336;
+
+@form-input-inactive-color:			 #5a5a5a;
+
+@loader-bg-color: 							 #000d16;
+@loader-orange: 								 #f57a37;
+
+// Typography
+// -------------------------
+//@import url(https://fonts.googleapis.com/css?family=Nunito:400,700);
+@font-face {
+	font-family: 'Flexo';
+	src: url('../fonts/FLEXO-MEDIUM.OTF'), url('../fonts/FLEXO-MEDIUM.eot');
+}
+@font-family-sans-serif: 'Flexo', sans-serif;
+@font-face {
+	font-family: 'Flexo-Light';
+	src: url('../fonts/FLEXO-LIGHT.OTF'), url('../fonts/FLEXO-LIGHT.eot');
+}
+@font-family-sans-serif-light: 'Flexo-Light', sans-serif;
+@font-face {
+	font-family: 'Flexo-Bold';
+	src: url('../fonts/FLEXO-BOLD.OTF'), url('../fonts/FLEXO-BOLD.eot');
+}
+@font-family-sans-serif-bold: 'Flexo-Bold', sans-serif;
+
+@font-size-base:          13px;
+@font-size-small:         ceil(@font-size-base * 0.85); // ~12px
+@font-size-smedium:       ceil(@font-size-base * 1.15); // ~15px
+@font-size-medium:        ceil(@font-size-base * 1.23); // ~16px
+@font-size-large:         ceil(@font-size-base * 1.38); // ~18px
+@font-size-xlarge:        ceil(@font-size-base * 1.60); // ~21px
+@font-size-xxlarge:       ceil(@font-size-base * 2.15); // ~28px
+@font-size-xxxlarge:      ceil(@font-size-base * 2.38); // ~31px
+
+@line-height-base:        1.428571429; // 20/14
+@line-height-computed:    floor(@font-size-base * @line-height-base); // ~20px
+
+// Iconography
+// -------------------------
+@import "font-awesome/font-awesome.less";
+
+// Components
+// -------------------------
+// Based on 14px font-size and 1.428 line-height (~20px to start)
+
+@border-radius-base:             4px;
+@border-radius-large:            6px;
+@border-radius-small:            2px;
+@border-radius-none:             0;
+
+// Tables
+// -------------------------
+
+// Buttons
+// -------------------------
+@btn-primary-bg: 								 @orange;
+
+// Forms
+// -------------------------
+
+// Dropdowns
+// -------------------------
+
+// COMPONENT VARIABLES
+// --------------------------------------------------
+@base-section-padding: 15%;
+@sm-section-padding:   3.5%;
+@no-section-padding:   0;
+
+
+// Z-index master list
+// -------------------------
+// Used for a bird's eye view of components dependent on the z-axis
+// Try to avoid customizing these :)
+
+@zindex-navbar:            1000;
+@zindex-dropdown:          1000;
+@zindex-popover:           1010;
+@zindex-tooltip:           1030;
+@zindex-navbar-fixed:      1030;
+@zindex-modal-background:  1040;
+@zindex-modal:             1050;
+
+// Media queries breakpoints
+// --------------------------------------------------
+@screen-xxs:                       320px;
+@screen-phone:                     480px;
+@screen-phone-min:                 @screen-phone;
+@screen-tablet:                    768px;
+@screen-tablet-min:                @screen-tablet;
+@screen-tablet-landscape:          1024px;
+@screen-mac-mdpi-old:              1278px;
+@screen-mac-mdpi-old-min:          @screen-mac-mdpi-old;
+@screen-mac-mdpi:                  1280px;
+@screen-mac-mdpi-min:              @screen-mac-mdpi;
+@screen-mdpi:                      1366px;
+@screen-mdpi-min:                  @screen-mdpi;
+@screen-hdpi:                      1440px;
+@screen-hdpi-min:                  @screen-hdpi;
+@screen-lg:                        1600px;
+@screen-lg-min:                    @screen-lg;
+@screen-xl:                        2560px;
+@screen-xl-min:                    @screen-xl;
+
+@screen-phone-max:                 ( @screen-tablet-min - 1 );
+@screen-tablet-max:                ( @screen-mac-mdpi-old-min - 1 );
+@screen-mac-mdpi-old-max:          ( @screen-mac-mdpi-min - 1 );
+@screen-mac-mdpi-max:              ( @screen-mdpi-min - 1 );
+@screen-mdpi-max:                  ( @screen-hdpi-min - 1 );
+@screen-hdpi-max:                  ( @screen-lg-min - 1 );
+@screen-lg-max:                    ( @screen-xl-min - 1 );

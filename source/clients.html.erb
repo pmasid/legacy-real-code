@@ -1,0 +1,100 @@
+<%= partial 'nav_menu_clients' %>
+<div class="main-content">
+	<div class="top-bar sm-padding is-on-top">
+		<div class="logo pointer" onclick="window.location='/'"></div>
+		<div class="page-title">Clientes</div>
+		<div class="lang">
+			<a href="javascript:void(0)" class="nav-icon left-space"><i class="icon icon-menu large"></i></a>
+			<button type="button" data-toggle="modal" data-target="#clients-filter-dialog">Filtrar</button>
+			<button type="button" data-toggle="modal" data-target="#clients-search-dialog">Buscar</button>
+		</div>
+	</div>
+	<section class="section initial">
+		<div class="main-clients">
+			<ul class="quotes">
+				<li>
+					<i class="icon icon-quotes" aria-hidden="true"></i>
+					<p>What EloGroup does is really simple. Simple and profound. Very different from complex and superficial processes.</p>
+					<p><span class="strong">Raquel Muller,</span> Executive Marketing at Grupo Globo</p>
+				</li>
+				<li>
+					<i class="icon icon-quotes" aria-hidden="true"></i>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+					<p><span class="strong">Matilde Alves,</span> Executive at TMG</p>
+				</li>
+				<li>
+					<i class="icon icon-quotes" aria-hidden="true"></i>
+					<p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular.</p>
+					<p><span class="strong">Igor Barbosa,</span> Executive Finance at Biosev</p>
+				</li>
+			</ul>
+			<div class="nav-dots">
+				<a href="javascript:void(0)">
+					<i class="fa fa-dot-circle-o"></i></i><i class="fa fa-circle"></i>
+				</a>
+				<a href="javascript:void(0)">
+					<i class="fa fa-dot-circle-o"></i></i><i class="fa fa-circle"></i>
+				</a>
+				<a href="javascript:void(0)">
+					<i class="fa fa-dot-circle-o"></i></i><i class="fa fa-circle"></i>
+				</a>
+			</div>
+		</div>
+	</section>
+	<section class="section clients sm-padding">
+		<div class="group">
+			<div class="client" data-toggle="modal" data-target="#clients-details-dialog">
+				<img src="images/clients/client-biosev.png">
+			</div>
+			<div class="client" data-toggle="modal" data-target="#clients-details-dialog">
+				<img src="images/clients/client-fundacao-mt.png">
+			</div>
+			<div class="client" data-toggle="modal" data-target="#clients-details-dialog">
+				<img src="images/clients/client-andre-maggi.png">
+			</div>
+			<div class="client" data-toggle="modal" data-target="#clients-details-dialog">
+				<img src="images/clients/client-tmg.png">
+			</div>
+			<div class="client">
+				<img src="images/clients/client-bradesco.png">
+			</div>
+			<div class="client">
+				<img src="images/clients/client-caixa.png">
+			</div>
+			<div class="client">
+				<img src="images/clients/client-experian.png">
+			</div>
+			<div class="client">
+				<img src="images/clients/client-bc.png">
+			</div>
+			<div class="client">
+				<img src="images/clients/client-fundacao-mt.png">
+			</div>
+			<div class="client">
+				<img src="images/clients/client-andre-maggi.png">
+			</div>
+			<div class="client">
+				<img src="images/clients/client-bradesco.png">
+			</div>
+			<div class="client">
+				<img src="images/clients/client-caixa.png">
+			</div>
+			<div class="client">
+				<img src="images/clients/client-experian.png">
+			</div>
+			<div class="client">
+				<img src="images/clients/client-bc.png">
+			</div>
+			<div class="client">
+				<img src="images/clients/client-fundacao-mt.png">
+			</div>
+			<div class="client">
+				<img src="images/clients/client-andre-maggi.png">
+			</div>
+		</div>
+	</section>
+	<%= partial '_dialog_clients_filter' %>
+	<%= partial '_dialog_clients_search' %>
+	<%= partial '_dialog_clients_details' %>
+	<%= partial 'footer' %>
+</div>
